@@ -1,0 +1,77 @@
+body { background-color: rgb(238,238,238); }
+body>* { background-color: #fff; color: rgb(60,60,60); }
+.user {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px 0 30px;
+	font-size: 18px;
+	color: rgb(70,70,70);
+}
+.user>img { width: 74px; }
+.user>.logo { width: 52px; }
+.user>span { padding-bottom: 10px; }
+/* 订单 */
+.order { margin: 10px 0; }
+.order>div,.property>div,.other>li {
+	display: flex;
+	padding: 10px;
+	border-bottom: 1px solid rgb(243,243,243);
+}
+.order>div>p { 
+	flex-grow: 1;
+}
+.order>div>p:nth-child(2) {
+	text-align: right;
+	color: #969696;
+	font-size: 13px;
+}
+.order>div>p>img,.other>li>p:nth-child(2)>img {
+	margin-left: 4px;
+	width: 7px;
+}
+.order>ul,.property>ul { 
+	display: flex;
+	padding: 14px 0;
+	font-size: 14px;
+	color: #5a5a5a;
+}
+.order>ul>li,.property>ul>li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex-grow: 1;
+}
+.order>ul>li>img { 
+	margin-bottom: 4px;
+	width: 24px;
+}
+.order>ul>li>p { }
+/* 我的资产 */
+.property>ul>li:nth-child(2) {
+	box-sizing: border-box;
+	border-left: 1px solid rgb(243,243,243);
+}
+.other {
+	margin: 10px 0;
+	padding: 0 10px;
+}
+.other>li {
+	padding: 10px 0;
+}
+.other>li>p {
+	display: flex;
+	align-items: center;
+}
+.other>li>p:nth-child(1)>img {
+	margin-right: 10px;
+}
+.other>li>p:nth-child(1) {
+	flex-grow: 1;
+}
+.other>li>p:nth-child(2) {
+	width: 10px;
+}
+.other>li>p>img {
+	width: 20px;
+}

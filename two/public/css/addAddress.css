@@ -1,0 +1,52 @@
+#myAddrs {
+	/*width: 90%;*/
+	/*font-size: 16px;*/
+	/*border: 1px solid #bababa;*/
+	border-radius: 4px;
+	/*padding: 10px;*/
+	/*margin-top: 10px;*/
+	/*color: gray;*/
+}
+body { font-size: 16px; background-color: rgb(238,238,238); }
+ul {
+	color: #909090;
+	background-color: #fff;
+}
+ul>li {
+	display: flex;
+	height: 40px;
+	border-bottom: 1px solid rgb(248,248,248);
+}
+ul>li>span {
+	display: flex;
+	align-items: center;
+	flex-shrink: 0;
+	box-sizing: border-box;
+	padding-left: 10px;
+	width: 100px;
+}
+ul>li>input {
+	flex-grow: 1;
+	outline: none;
+	border: none;
+}
+::-webkit-input-placeholder{
+	color: #707070;
+}
+
+.save {
+	margin: 20px;
+	height: 44px;
+	line-height: 44px;
+	border-radius: 6px;
+	text-align: center;
+	background-color: #94193f;
+	color: #fff;
+	
+}
+
+
+
+
+
+

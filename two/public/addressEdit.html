@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="css/layout.min.css" rel="stylesheet" />
+	<link href="css/scs.min.css" rel="stylesheet" />
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/addressEdit.css">
+	<title>新增地址</title>
+</head>
+<body>
+<ul>
+	<li>
+		<span>收货人</span>
+		<input class="name" type="text" placeholder="输入收货人姓名">
+	</li>
+	<li>
+		<span>手机号码</span>
+		<input class="tel" type="text" placeholder="输入手机号码">
+	</li>
+	<li>
+		<span>省市区</span>
+		<input class="address" type="text" readonly placeholder="选择省市区" id="myAddrs" name="addr" data-key="4-84-1298" value="选择省市区" />
+	</li>
+	<li>
+		<span>详细地址</span>
+		<input class="detail-address" type="text" placeholder="输入详细地址">
+	</li>
+</ul>
+<div class="save2">保 存</div>
+<script src="js/jQuery-3.4.0.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.scs.min.js"></script>
+<script src="js/CNAddrArr.min.js"></script>
+<script src="js/js.cookie.min.js"></script>
+<script src="js/myHttp.js"></script>
+<script src="js/addAddress.js"></script>
+<script src="js/addressEdit.js"></script>
+</body>
+</html>

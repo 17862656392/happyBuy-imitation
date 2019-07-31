@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+	      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/cart.css">
+	<title>购物车</title>
+</head>
+<body>
+	<div class="header">
+		<p>购物车</p>
+		<p class="btn-edit">编辑</p>
+	</div>
+	<div class="content">
+		<ul class="cart-list"></ul>
+	</div>
+	<footer class="footer-normal">
+		<div class="all-wrapper">
+			<span class="checkbox all checked"></span> 全选
+		</div>
+		<div class="total-price-wrapper">
+			合计:<span>￥<span class="total-price"></span></span>
+		</div>
+		<div class="btn-settlement">结 算&nbsp;<span class="total-count"></span>&nbsp;</div>
+	</footer>
+	<footer class="footer-edit">
+		<div class="all-wrapper">
+			<span class="checkbox all"></span> 全选
+		</div>
+		<div class="btn-remove">删除</div>
+	</footer>
+
+<script src="js/jQuery-3.4.0.js"></script>
+<script src="js/js.cookie.min.js"></script>
+<script src="js/myHttp.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

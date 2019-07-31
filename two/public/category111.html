@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	<link rel="stylesheet" type="text/css" href="css/category.css"/>
+	<title>分类</title>
+</head>
+<body>
+	<div id="root">
+		<!-- 页头 -->
+		<div class="header">
+			<div class="search">
+				<img src="images/s_ico1.png" >
+				<span>搜索商品,品牌</span>
+			</div>
+		</div>
+		<!-- 内容 -->
+		<div class="content">
+			<div class="content-left">
+				<ul class="category-main">
+					<li :data-id="item.id" :class="{ active:i == ins}" @click="scrollClick(i)"  v-for="(item, i) in main" :key="item.id">
+						<span v-text="item.name"></span>
+					</li>
+				</ul>
+			</div>
+			<div class="content-right">
+				<div class="avatar-wrapper">
+					<!--<img class="avatar" :src="item.avatar">-->
+				</div>
+				<ul class="category-sub">
+					<li v-for="(item, i) in sub" :key="item.id">
+						<a :href="`list.html?cid=${ item.id }&name=${ item.name }`">
+							<img :src="item.avatar" />
+							<span v-text="item.name"></span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!-- 页脚 -->
+		<div class="footer">
+			<ul>
+				<li><a href="index.html"><img src="images/footer/home.png" ><span>首页</span></a></li>
+				<li><a href="#"><img src="images/footer/category.png" ><span>分类</span></a></li>
+				<li><a href="#"><img src="images/footer/video.png" ><span>直播表</span></a></li>
+				<li><a href="#"><img src="images/footer/cart.png" ><span>购物车</span></a></li>
+				<li class="login"><a href="#"><img src="images/footer/person.png" ><span>我的</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<script src="js/vue.js"></script>
+	<script src="js/axios.js"></script>
+	<!--<script src="js/jQuery-3.4.0.js"></script>-->
+	<script src="js/js.cookie.min.js"></script>
+	<!--<script src="js/myHttp.js"></script>-->
+	<script src="js/category111.js"></script>
+
+</body>
+</html>

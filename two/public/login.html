@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/login.css" />
+		<title>登录</title>
+	</head>
+	<body>
+		<!-- 页头 -->
+		<div class="header">
+			<a href="index.html">
+				<img src="images/ico_fh.png" >
+			</a>
+			<div>
+				<span class="active">账号登录</span>
+				<span>无密码快速登录</span>
+			</div>
+		</div>
+		<div class="content">
+			<!-- 登录 -->
+			<ul class="login active">
+				<li>
+					<img src="images/mob.jpg" />
+					<input class='account' type="text" placeholder="请输入邮箱/会员名或手机号" />
+				</li>
+				<li>
+					<img src="images/lock.jpg" />
+					<input class='pwd' type="password" placeholder="请输入登录密码" />
+				</li>
+				<li class="login"><button class='btn-pwd'>登录</button></li>
+			</ul>
+			<!-- 注册 -->
+			<ul class="logon">
+				<li>
+					<img src="images/mob.jpg" />
+					<input class='phone' type="text" placeholder="请输入手机号" />
+				</li>
+				<li>
+					<img src="images/phone.jpg" />
+					<input class='code2' type="text" placeholder="请输入短信验证码" />
+					<button class='code'>获取验证码</button>
+				</li>
+				<li class="login"><button class='btn-phone'>注册</button></li>
+			</ul>
+			<img src="images/ico_line.png" />
+		</div>
+		<script src="js/jQuery-3.4.0.js"></script>
+		<script src="js/js.cookie.min.js"></script>
+		<script src="js/myHttp.js"></script>
+		<script src="js/login.js"></script>
+	</body>
+</html>
